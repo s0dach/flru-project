@@ -35,6 +35,17 @@ export const HomeMain = () => {
                 </div>
               );
             }
+            if (text === "Задания") {
+              return (
+                <div
+                  className="homeMain-menu-middle-text-block"
+                  key={index}
+                  onClick={() => navigate("/tasks")}
+                >
+                  <span className="homeMain-menu-middle-text">{text}</span>
+                </div>
+              );
+            }
             return (
               <div className="homeMain-menu-middle-text-block" key={index}>
                 <span className="homeMain-menu-middle-text">{text}</span>

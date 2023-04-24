@@ -4,6 +4,7 @@ import { TasksStages } from "./TasksStages/TasksStages";
 import "./index.css";
 import { TasksTip } from "./TasksRightComps/TasksTip";
 import TasksStepOne from "./TasksRightComps/TasksStepOne";
+import TasksTwoCases from "./TasksRightComps/TasksTwoCases";
 
 export const Tasks = () => {
   return (
@@ -21,6 +22,7 @@ export const Tasks = () => {
           </div>
           <TasksTip />
           <TasksStepOne />
+          <TasksTwoCases />
         </div>
       </div>
     </>

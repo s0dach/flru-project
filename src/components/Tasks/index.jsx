@@ -11,7 +11,7 @@ export const Tasks = () => {
   const [active, setActive] = React.useState(false);
   return (
     <>
-      <Header />
+      <Header active={"Задания"} />
       <div className="tasks-container  background-filter">
         <div className="wrap-bg"></div>
         <TasksStages />

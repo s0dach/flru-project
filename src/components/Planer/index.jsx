@@ -5,7 +5,7 @@ import { PlanerMenu } from "./PlanerMenu/PlanerMenu";
 export const Planer = () => {
   return (
     <>
-      <Header />
+      <Header active={"Планер"} />
       <PlanerMenu />
     </>
   );

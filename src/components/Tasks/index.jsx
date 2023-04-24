@@ -5,8 +5,10 @@ import "./index.css";
 import { TasksTip } from "./TasksRightComps/TasksTip";
 import TasksStepOne from "./TasksRightComps/TasksStepOne";
 import TasksTwoCases from "./TasksRightComps/TasksTwoCases";
+import { TasksModal } from "./TasksModal/TasksModal";
 
 export const Tasks = () => {
+  const [active, setActive] = React.useState(false);
   return (
     <>
       <Header />
@@ -14,7 +16,10 @@ export const Tasks = () => {
         <div className="wrap-bg"></div>
         <TasksStages />
         <div className="tasks-container-left-up-block-rod">
-          <div className="tasks-container-left-up-block">
+          <div
+            className="tasks-container-left-up-block"
+            onClick={() => setActive(true)}
+          >
             <p className="tasks-container-left-up-block-text">Этап 5</p>
             <span className="tasks-container-left-up-block-text-down">
               План развития себя
@@ -25,6 +30,7 @@ export const Tasks = () => {
           <TasksTwoCases />
         </div>
       </div>
+      <TasksModal active={active} setActive={setActive} />
     </>
   );
 };

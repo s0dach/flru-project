@@ -13,7 +13,7 @@
   justify-content: space-between;
 }
 .tasks-stages-container-up-block-text {
-  margin-left: 8px;
+  margin-left: 12px;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -65,6 +65,7 @@
   line-height: 8px;
   color: #ffffff;
 }
+
 .tasks-stages-container-up-block-svg-text-block-child-text-block {
   display: flex;
   align-items: center;
@@ -90,4 +91,16 @@
   position: fixed;
   margin-left: 5.5px;
   margin-top: 4px;
+}
+.arrowBlock {
+  width: 100%;
+  border-left: 2.33px solid #00a2ff;
+}
+.tasks-stages-container-up-block-svg-text-block-ellipse {
+  position: absolute;
+  left: 18.5px;
+}
+.tasks-stages-container-up-block-svg-text-block-new {
+  display: flex;
+  align-items: center;
 }

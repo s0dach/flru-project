@@ -38,6 +38,28 @@
   margin-left: 11px;
   text-align: left;
 }
+.hoverAct {
+  display: none;
+}
+
+.footer-flex:hover .hoverNone {
+  display: none;
+}
+.footer-flex:hover .hoverAct {
+  display: block;
+}
+.footer-container-block-text-four {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #113045;
+  cursor: pointer;
+  text-align: left;
+}
+.footer-flex {
+  display: flex;
+}
 .footer-container-block-two-imgs-block {
   display: flex;
   margin-top: 7px;

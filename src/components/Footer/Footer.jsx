@@ -1,63 +1,71 @@
 import React from "react";
 import "./styles.css";
-import telegramLogo from "../../assets/images/telegram.png";
-import whatsappLogo from "../../assets/images/whatsapp.png";
+import { ReactComponent as EllipseDis } from "../../assets/svgs/footer/footerellipseDis.svg";
+import { ReactComponent as EllipseAct } from "../../assets/svgs/footer/footerellipseAct.svg";
 
 export const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-container-block-one">
         <div>
-          <span className="footer-container-block-text-up">Почта</span>
+          <span className="footer-container-block-text-up">
+            +7 (915) 444-44-44 Copy
+          </span>
         </div>
-        <div className="footer-container-block-one-text-down-block">
+        <div>
           <span className="footer-container-block-text-down">
             info@naporoge.ru
           </span>
         </div>
+        <div>
+          <span className="footer-container-block-text-down">@naporoge</span>
+        </div>
       </div>
       <div className="footer-container-block-two">
         <div>
-          <span className="footer-container-block-text-up">Есть вопросы?</span>
-        </div>
-        <div className="footer-container-block-two-imgs-block">
-          <div className="footer-container-block-two-img-one">
-            <img src={telegramLogo} alt="telegramLogo" />
-          </div>
-          <div className="footer-container-block-two-img-two">
-            <img src={whatsappLogo} alt="whatsappLogo" />
-          </div>
+          <EllipseDis />
+          <span className="footer-container-block-text-second">
+            О проекте «На пороге»
+          </span>
         </div>
         <div>
-          <span className="footer-container-block-text-down">
-            +7 (915) 444-44-44
+          <EllipseAct />
+          <span className="footer-container-block-text-second">
+            Политика конфиденциальности
+          </span>
+        </div>
+        <div>
+          <EllipseDis />
+          <span className="footer-container-block-text-second">
+            Договор оферты
           </span>
         </div>
       </div>
       <div className="footer-container-block-three">
-        <div className="footer-container-block-three-text-up-block">
-          <span className="footer-container-block-text-up">
-            Открытый телеграм чат молодых людей, интересующихся саморазвитием
+        <div>
+          <EllipseDis />
+          <span className="footer-container-block-text-second">
+            Что может дать мне курс развития самоуправления?
           </span>
         </div>
-        <div className="footer-container-block-three-text-down-block">
-          <span className="footer-container-block-text-down">@naporoge</span>
+        <div>
+          <EllipseAct />
+          <span className="footer-container-block-text-second">
+            Что такое дело и как его подобрать?
+          </span>
+        </div>
+        <div>
+          <EllipseDis />
+          <span className="footer-container-block-text-second">
+            Все вопросы и ответы
+          </span>
         </div>
       </div>
       <div className="footer-container-block-four">
-        <div className="footer-container-block-four-text-up-block">
-          <span className="footer-container-block-text-up">
-            Сайт проекта “На пороге”
-          </span>
-        </div>
-        <div className="footer-container-block-four-text-down-block">
-          <span className="footer-container-block-text-down">naporoge.ru</span>
-        </div>
-        <div className="footer-container-block-text-down-policy-block">
-          <span className="footer-container-block-text-down-policy">
-            Политика конфиденциальности и обработки персональных данныхu
-          </span>
-        </div>
+        <span className="footer-container-block-text-second">
+          ИП Киктенко Максим Вячеславович ИНН 770407593206 ОГРНИП 32377400066301
+          Москва, Смоленская набережная, д.2
+        </span>
       </div>
     </div>
   );

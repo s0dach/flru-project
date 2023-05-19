@@ -1,7 +1,6 @@
 .homeMain-container {
   padding: 24px 26px 178px 27px;
   background-image: url(../../../assets/images/background-main.png);
-  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -11,8 +10,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  max-width: 1600px;
+  top: 24px;
 }
-
+.homeMain-menu-block-scroll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  max-width: 1600px;
+  top: 24px;
+  background-color: #ffffff;
+  z-index: 500;
+}
 .homeMain-menu-middle-block {
   display: flex;
 }
@@ -28,7 +45,14 @@
   text-align: center;
   color: #ffffff;
 }
-
+.homeMain-menu-middle-text-scroll {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 24px;
+  text-align: center;
+  color: #1d1d1d;
+}
 .homeMain-menu-right-block {
   display: flex;
 }
@@ -37,7 +61,7 @@
 }
 
 .homeMain-center-text-up-block {
-  margin-top: 85px;
+  margin-top: 139px;
   max-width: 787px;
 }
 .homeMain-center-text-up {
@@ -72,6 +96,9 @@
   margin-top: 40px;
   padding: 32.5px 31px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .homeMain-center-button-text {
@@ -79,4 +106,9 @@
   font-weight: 800;
   font-size: 2rem;
   color: #ffffff;
+}
+.content {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }

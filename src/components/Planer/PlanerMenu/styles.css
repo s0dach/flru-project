@@ -27,6 +27,13 @@
   position: relative;
   z-index: 1;
 }
+.planer-menu-container-up-block-first {
+  display: flex;
+  align-items: center;
+}
+.planer-menu-container-up-block-first-svg-block {
+  margin-right: 15px;
+}
 .planer-menu-container-up-block-first-text-up {
   font-style: normal;
   font-weight: 800;
@@ -48,6 +55,16 @@
 .planer-menu-container-up-block-first-text-block-two {
   margin-top: 12px;
   display: flex;
+}
+.planer-menu-container-up-block-second-text-up {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #df1010;
+  max-width: 200px;
+  margin-right: 50px;
 }
 .planer-menu-container-up-block-second {
   display: flex;

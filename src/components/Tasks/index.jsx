@@ -6,6 +6,7 @@ import { TasksTip } from "./TasksRightComps/TasksTip";
 import TasksStepOne from "./TasksRightComps/TasksStepOne";
 import TasksTwoCases from "./TasksRightComps/TasksTwoCases";
 import { TasksModal } from "./TasksModal/TasksModal";
+import { TasksHow } from "./TasksRightComps/TasksHow";
 
 export const Tasks = () => {
   const [active, setActive] = React.useState(false);
@@ -20,14 +21,19 @@ export const Tasks = () => {
             className="tasks-container-left-up-block"
             onClick={() => setActive(true)}
           >
-            <p className="tasks-container-left-up-block-text">Этап 5</p>
+            {/* <p className="tasks-container-left-up-block-text">Этап 5</p>
             <span className="tasks-container-left-up-block-text-down">
               План развития себя
+            </span> */}
+            <p className="tasks-container-left-up-block-text">Введение</p>
+            <span className="tasks-container-left-up-block-text-down">
+              Как пользоваться
             </span>
           </div>
-          <TasksTip />
-          <TasksStepOne />
-          <TasksTwoCases />
+          <TasksHow />
+          {/* <TasksTip /> */}
+          {/* <TasksStepOne />
+          <TasksTwoCases /> */}
         </div>
       </div>
       <TasksModal active={active} setActive={setActive} />

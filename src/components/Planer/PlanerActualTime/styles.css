@@ -23,37 +23,32 @@
   display: flex;
   align-items: center;
 }
-.planer-actualtime-time-block-text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 26px;
-  color: #333333;
-}
-.planer-actualtime-time-block-star {
-  color: #cf2b07;
-  margin-right: 7px;
-}
-.planer-actualtime-time-block-input {
-  background: #ffffff;
-  border: 1px solid #c2c9d1;
-  border-radius: 10px;
-  width: 87px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin: 13px 0;
-}
-.planer-actualtime-time-block-input-text {
-  color: #000000;
-  font-size: 1.25rem;
-  margin-bottom: 9px;
-}
 .planer-actualtime-time-block-first {
   display: flex;
   align-items: center;
 }
 .planer-actualtime-text-block {
   margin-left: 28.5px;
+}
+.planer-actualtime-time-block-first-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #c2c9d1;
+}
+.planer-actualtime-time-block-first-time-block {
+  width: 214px;
+  height: 41px;
+  left: 68px;
+  top: 0px;
+  margin: 20px 9px 20px 16px;
+  background: rgba(194, 201, 209, 0.2);
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #c2c9d1;
+  border-radius: 6px;
 }

@@ -178,3 +178,161 @@
   line-height: 21px;
   color: #00a2ff;
 }
+
+.planer-mission-block-up-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+}
+.planer-mission-block-up {
+  display: flex;
+  align-items: center;
+}
+.planer-mission-block-up-status {
+  width: 80px;
+  height: 40px;
+  left: 194.5px;
+  top: 380.93px;
+  background: #ffffff;
+  border: 1px solid #c2c9d1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+}
+.planer-mission-block-radio-status {
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #c2c9d1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 11px;
+}
+.planer-mission-block-radio-block {
+  display: grid;
+  justify-items: center;
+}
+.planer-mission-block-radio-block-ml {
+  display: grid;
+  margin-left: 33px;
+  justify-items: center;
+}
+.planer-mission-container-bottom-up-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 21px;
+}
+.planer-mission-container-bottom-second-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.planer-mission-container-bottom-second-block-child-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+}
+.planer-mission-container-bottom-second-button-block {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.planer-mission-container-bottom-second-button-yes {
+  width: 80px;
+  height: 40px;
+  background: #00a2ff;
+  border: 1px solid #00a2ff;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.planer-mission-container-bottom-second-button-no {
+  width: 80px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #c2c9d1;
+  border-radius: 0px 10px 10px 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #c2c9d1;
+}
+.planer-mission-container-bottom-comments-block {
+  margin-top: 32px;
+}
+.textarea {
+  resize: none;
+  background: #ffffff;
+
+  border: 1px solid #c2c9d1;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+  height: 80px;
+  padding: 13px 19px;
+}
+.textarea-block {
+  margin-top: 8px;
+}
+.planer-mission-button-bottom {
+  margin-top: 33px;
+  width: 272px;
+  height: 57px;
+  left: 26.21px;
+  top: 697.36px;
+
+  border: 2px solid #c2c9d1;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.planer-mission-button-bottom-text {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #c2c9d1;
+}
+.radio-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #c2c9d1;
+}
+.radioinput + label {
+  width: 14px;
+  height: 14px;
+  background: #c2c9d1;
+  border-color: green;
+}

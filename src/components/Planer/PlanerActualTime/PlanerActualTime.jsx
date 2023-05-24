@@ -12,24 +12,12 @@ export const PlanerActualTime = () => {
       <div className="planer-actualtime-time-block">
         <div className="planer-actualtime-time-block-first">
           <div className="planer-actualtime-time-block-first-text-block">
-            <span className="planer-actualtime-time-block-text">с</span>
-            <span className="planer-actualtime-time-block-star">*</span>
-          </div>
-          <div className="planer-actualtime-time-block-input">
-            <span className="planer-actualtime-time-block-input-text">
-              _ _ : _ _
+            <span className="planer-actualtime-time-block-first-text">
+              Время
             </span>
           </div>
-        </div>
-        <div className="planer-actualtime-time-block-second">
-          <div>
-            <span className="planer-actualtime-time-block-text">по</span>
-            <span className="planer-actualtime-time-block-star">*</span>
-          </div>
-          <div className="planer-actualtime-time-block-input">
-            <span className="planer-actualtime-time-block-input-text">
-              _ _ : _ _
-            </span>
+          <div className="planer-actualtime-time-block-first-time-block">
+            Тут будет время
           </div>
         </div>
       </div>

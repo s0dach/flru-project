@@ -59,7 +59,7 @@ export const PlanerMenu = () => {
             </div>
           );
         })}
-        <div className="fullwidth">
+        <div className="fullwidth-none">
           <PlanerCalendar value={7} />
         </div>
       </div>

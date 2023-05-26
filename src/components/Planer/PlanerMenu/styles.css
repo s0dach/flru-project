@@ -5,6 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 200px;
+  top: 86px;
 }
 .background-filter::after {
   -webkit-backdrop-filter: blur(20px);
@@ -136,10 +137,11 @@
   margin-top: 16px;
 }
 .fullwidth {
+  margin-right: 25px;
   width: 100%;
 }
-.mr16 {
-  margin-right: 16px;
+.fullwidth-none {
+  width: 100%;
 }
 .wrap-bg {
   opacity: 0.4;

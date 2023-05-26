@@ -8,7 +8,7 @@ export const Auth = () => {
   const [restore, setRestore] = React.useState(false);
   return (
     <div className="auth-container">
-      {restore && (
+      {/* {restore && (
         <div
           className="auth-back-block"
           onClick={() => {
@@ -31,7 +31,7 @@ export const Auth = () => {
 
           <span className="auth-back-block-text">Назад</span>
         </div>
-      )}
+      )} */}
       <div className="auth-menu-block">
         <div className="auth-menu-up-block">
           {restore ? (
@@ -66,6 +66,7 @@ export const Auth = () => {
             <input
               className="auth-menu-input"
               placeholder="Пароль"
+              type="password"
               // type={passwordСipher ? "password" : "text"}
             />
           )}

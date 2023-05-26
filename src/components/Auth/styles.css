@@ -7,7 +7,7 @@
   justify-content: center;
 }
 .auth-menu-block {
-  margin-top: 160px;
+  margin: 160px 0;
   width: 502px;
 }
 .auth-menu-up-block {
@@ -24,7 +24,25 @@
   letter-spacing: -0.02em;
   color: #1d1d1d;
 }
-
+.auth-menu-up-block-text-restore {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #1d1d1d;
+  margin-bottom: 16px;
+}
+.auth-menu-up-block-text-two-restore {
+  max-width: 468px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #1d1d1d;
+}
 .auth-menu-input {
   width: 100%;
   height: 68px;
@@ -130,7 +148,7 @@
 
 /* конец */
 .auth-menu-button-block {
-  margin-top: 40px;
+  margin-top: 32px;
   width: 100%;
   height: 68px;
   background: #c2c9d1;
@@ -163,8 +181,36 @@
   line-height: 21px;
   letter-spacing: -0.02em;
   color: #00a2ff;
+  cursor: pointer;
 }
 .auth-menu-down-block {
   display: grid;
   justify-items: center;
+}
+.noacc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  color: #1d1d1d;
+}
+.auth-back-block {
+  position: absolute;
+  left: 24px;
+  top: 40px;
+}
+.auth-back-block-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+
+  /* C2C9D1 */
+
+  color: #c2c9d1;
+  margin-left: 9px;
+  cursor: pointer;
 }

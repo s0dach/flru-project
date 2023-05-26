@@ -4,7 +4,6 @@ import { ReactComponent as LeftMainSvg } from "../../../assets/svgs/leftMain.svg
 import { ReactComponent as QuestionSvg } from "../../../assets/svgs/question.svg";
 import { ReactComponent as PeopleSvg } from "../../../assets/svgs/people.svg";
 import { useNavigate } from "react-router-dom";
-import { Header } from "../../Header/Header";
 
 export const HomeMain = () => {
   const navigate = useNavigate();
@@ -20,10 +19,6 @@ export const HomeMain = () => {
   ];
   const handleScroll = () => {
     setScroll(window.scrollY);
-  };
-
-  const handleUpButton = () => {
-    window.scrollTo(0, 0);
   };
 
   React.useEffect(() => {

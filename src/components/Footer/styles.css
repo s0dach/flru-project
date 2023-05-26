@@ -1,5 +1,10 @@
-.footer-container {
+.footer-up-container {
+  width: 100vw;
   background-color: #ffffff;
+  position: relative;
+  z-index: 2312212;
+}
+.footer-container {
   padding: 25px 90px 35px 23px;
   display: flex;
   justify-content: space-between;

@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   padding-bottom: 200px;
   top: 86px;
+  position: relative;
 }
 .background-filter::after {
   -webkit-backdrop-filter: blur(20px);
@@ -97,7 +98,7 @@
 }
 
 .planer-calendar-container {
-  margin-top: 49px;
+  margin-bottom: 24px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -105,6 +106,7 @@
 }
 .planer-menu-down-left-block {
   margin-top: 17px;
+  width: 100%;
 }
 .planer-menu-down-left-button {
   width: 312px;
@@ -152,4 +154,17 @@
   right: 0;
   left: 0;
   background: url(../../../assets/images/background-main-center.png);
+}
+.fullwidth-cont {
+  margin-right: 25px;
+  width: 100%;
+  min-width: 1265px;
+}
+.planer-menu-up-left-block {
+  width: 100%;
+}
+.planer-menu-container-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

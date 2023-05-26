@@ -20,19 +20,30 @@ export const PlanerMission = () => {
           <span className="planer-mission-block-up-text">Сила желания</span>
           <div className="planer-mission-block-radio-status">
             <div className="planer-mission-block-radio-block">
-              <input type="radio" className="radioinput" />
+              <input value="null-up" type="radio" className="radioinput" />
               <span className="radio-text">Ноль</span>
             </div>
             <div className="planer-mission-block-radio-block-ml">
-              <input type="radio" className="radioinput" />
+              <input value="faintly-up" type="radio" className="radioinput" />
               <span className="radio-text">Слабо</span>
             </div>
             <div className="planer-mission-block-radio-block-ml">
-              <input type="radio" className="radioinput" />
+              <input
+                id="medium-up"
+                value="medium-up"
+                type="radio"
+                className="radioinput"
+              />
               <span className="radio-text">Средне</span>
             </div>
             <div className="planer-mission-block-radio-block-ml">
-              <input type="radio" className="radioinput" />
+              <input
+                id="strong-up"
+                value="strong-up"
+                type="radio"
+                className="radioinput"
+                onChange={(e) => (e.target.value = "off")}
+              />
               <span className="radio-text">Сильно</span>
             </div>
           </div>
@@ -105,9 +116,10 @@ export const PlanerMission = () => {
           Важная информация “для себя”:
         </span>
         <div className="textarea-block">
-          <textarea className="textarea" placeholder="Написать здесь">
-            dsda
-          </textarea>
+          <textarea
+            className="textarea"
+            placeholder="Написать здесь"
+          ></textarea>
         </div>
         <div className="planer-mission-button-bottom">
           <span className="planer-mission-button-bottom-text">Сохранить</span>

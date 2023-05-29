@@ -9,7 +9,7 @@ export const ProfileReset = () => {
         <div className="auth-menu-up-block">
           <>
             <LogoSvg />
-            <span className="auth-menu-up-block-text">Сменить пароль</span>
+            <span className="auth-menu-up-block-text">Мой профиль</span>
           </>
         </div>
         <div className="auth-menu-inputs-block">

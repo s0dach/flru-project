@@ -17,7 +17,12 @@ export const PlanerActualTime = () => {
             </span>
           </div>
           <div className="planer-actualtime-time-block-first-time-block">
-            Тут будет время
+            <span className="planer-actualtime-time-block-first-time-textone">
+              с 04:00{" "}
+              <span className="planer-actualtime-time-block-first-time-texttwo">
+                до __:__
+              </span>
+            </span>
           </div>
         </div>
       </div>

@@ -42,13 +42,25 @@
 .planer-actualtime-time-block-first-time-block {
   width: 214px;
   height: 41px;
-  left: 68px;
-  top: 0px;
   margin: 20px 9px 20px 16px;
   background: rgba(194, 201, 209, 0.2);
-  display: flex;
-  align-items: center;
-
   border: 1px solid #c2c9d1;
   border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.planer-actualtime-time-block-first-time-textone {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1d1d1d;
+}
+.planer-actualtime-time-block-first-time-texttwo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #c2c9d1;
 }

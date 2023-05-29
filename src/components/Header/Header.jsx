@@ -21,7 +21,10 @@ export const Header = ({ active }) => {
   return (
     <div className="header-container">
       <div className="header-menu-block">
-        <div className="header-menu-left-block" onClick={() => navigate("/")}>
+        <div
+          className="header-menu-left-block"
+          onClick={() => navigate("/home")}
+        >
           <LeftMainSvg />
         </div>
         <div className="header-menu-middle-block">

@@ -216,11 +216,13 @@
 .planer-mission-block-radio-block {
   display: grid;
   justify-items: center;
+  cursor: pointer;
 }
 .planer-mission-block-radio-block-ml {
   display: grid;
   margin-left: 33px;
   justify-items: center;
+  cursor: pointer;
 }
 .planer-mission-container-bottom-up-block {
   display: flex;
@@ -353,4 +355,29 @@ input[type="radio"]:checked:before {
 
 input[type="radio"]:checked {
   border-color: #00a2ff;
+}
+.planer-radio-button-dis {
+  width: 14px;
+  height: 14px;
+  background-color: #c2c9d1;
+  border-radius: 50%;
+}
+.planer-radio-button-act {
+  width: 14px;
+  height: 14px;
+  background-color: #00a2ff;
+  border-radius: 50%;
+}
+.radio-text-act {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  letter-spacing: -0.02em;
+
+  /* 00A2FF */
+
+  color: #00a2ff;
 }

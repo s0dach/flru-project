@@ -115,7 +115,10 @@ export const HomeMain = () => {
               соответствует насущным потребностям.
             </span>
           </div>
-          <div className="homeMain-center-button-block">
+          <div
+            className="homeMain-center-button-block"
+            onClick={() => navigate("/payment")}
+          >
             <span className="homeMain-center-button-text">Приобрести курс</span>
           </div>
         </div>

@@ -1,0 +1,49 @@
+.reset-time-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reset-time-block-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+.reset-time-block-time {
+  width: 332px;
+  height: 53px;
+
+  background: #ffffff;
+  border: 1px solid #c2c9d1;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* C2C9D1 */
+
+  color: #c2c9d1;
+}
+.deleteAcc {
+  position: absolute;
+  bottom: 72px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  /* 00A2FF */
+
+  color: #00a2ff;
+  border-bottom: 1px solid #00a2ff;
+  cursor: pointer;
+  right: 92px;
+}

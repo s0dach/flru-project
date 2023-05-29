@@ -4,8 +4,10 @@ import { ReactComponent as LeftMainSvg } from "../../assets/svgs/leftMain.svg";
 import { ReactComponent as QuestionSvg } from "../../assets/svgs/question.svg";
 import { ReactComponent as PeopleSvg } from "../../assets/svgs/people.svg";
 import { useNavigate } from "react-router-dom";
+import { MyProfile } from "../UI/MyProfile/MyProfile";
 
 export const Header = ({ active }) => {
+  const [profile, setProfile] = React.useState(false);
   const MiddleTextArr = [
     "Задания",
     "Дневник",
@@ -64,8 +66,13 @@ export const Header = ({ active }) => {
           <div className="header-menu-right-block-svg">
             <QuestionSvg />
           </div>
-          <div>
+          <div onClick={() => setProfile(!profile)}>
             <PeopleSvg />
+            {profile && (
+              <>
+                <MyProfile />
+              </>
+            )}
           </div>
         </div>
       </div>

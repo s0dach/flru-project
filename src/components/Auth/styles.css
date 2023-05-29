@@ -6,6 +6,17 @@
   align-items: center;
   justify-content: center;
 }
+.resetPass-container {
+  background: url(../../assets/images/background-main-center.png);
+  mix-blend-mode: multiply;
+  border-radius: 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
 .auth-menu-block {
   margin: 160px 0;
   width: 502px;

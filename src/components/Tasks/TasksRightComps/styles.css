@@ -184,6 +184,7 @@
 .tasks-stepUse-block {
   height: 77px;
   border-bottom: 1px solid #c2c9d1;
+  display: flex;
 }
 .tasks-stepUse-blockTwo {
   display: flex;

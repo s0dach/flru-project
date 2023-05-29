@@ -1,0 +1,48 @@
+.myProfile-container {
+  position: absolute;
+  right: 73px;
+  top: 12px;
+}
+.myProfile-text-block-two {
+  border: 1px solid rgba(194, 201, 209, 0.6);
+}
+.myProfile-text-block-one {
+  border: 1px solid rgba(194, 201, 209, 0.6);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.myProfile-text-block-three {
+  border: 1px solid rgba(194, 201, 209, 0.6);
+  border-radius: 0px 0px 10px 10px;
+}
+.myProfile-text-block-two,
+.myProfile-text-block-one,
+.myProfile-text-block-three {
+  background: #ffffff;
+  height: 57px;
+  width: 287px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.myProfile-text-block-two:hover,
+.myProfile-text-block-one:hover,
+.myProfile-text-block-three:hover {
+  background: #00a2ff;
+}
+.myProfile-text-block-two:hover .myProfile-text,
+.myProfile-text-block-one:hover .myProfile-text,
+.myProfile-text-block-three:hover .myProfile-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.myProfile-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1d1d1d;
+}

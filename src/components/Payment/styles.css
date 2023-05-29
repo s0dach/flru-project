@@ -1,0 +1,115 @@
+.payment-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5faff;
+  display: flex;
+}
+.payment-block {
+  padding: 30px 25px;
+  background: #ffffff;
+  width: 413px;
+
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.05),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+}
+.payment-block-two {
+  padding: 30px 25px;
+  margin-left: 32px;
+  background: #ffffff;
+  width: 413px;
+
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.05),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+}
+.payment-container-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment-up-text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  color: #1d1d1d;
+}
+.payment-up-text-block-child {
+  width: 235px;
+  display: flex;
+}
+.payment-up-text-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment-second-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  /* 1D1D1D */
+
+  color: #1d1d1d;
+  margin-left: 10px;
+}
+.payment-second-text-block-child {
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+}
+.payment-second-text-block-child-last {
+  display: flex;
+  align-items: center;
+}
+.payment-second-text-block {
+  padding: 24px 0;
+  border-top: 2px solid #c2c9d1;
+  border-bottom: 2px solid #c2c9d1;
+}
+.payment-sum-block {
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment-sum-text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+
+  color: #1d1d1d;
+}
+.payment-button {
+  width: 272px;
+  height: 68px;
+  background: #00a2ff;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.payment-button-text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+.payment-button-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

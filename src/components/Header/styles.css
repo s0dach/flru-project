@@ -44,3 +44,15 @@
   border-bottom: 1px solid #00a2ff;
   color: #00a2ff;
 }
+.auth-menu-down-block-text-reset {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #00a2ff;
+}
+.text-center {
+  text-align: center;
+}

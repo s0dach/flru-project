@@ -9,7 +9,7 @@ import { HelpButton } from "../UI/HelpButton/HelpButton";
 
 export const Header = ({ active }) => {
   const [profile, setProfile] = React.useState(false);
-  const [helpButton, setHelpButton] = React.useState(false)
+  const [helpButton, setHelpButton] = React.useState(false);
   const MiddleTextArr = [
     "Задания",
     "Дневник",
@@ -42,6 +42,17 @@ export const Header = ({ active }) => {
                 </div>
               );
             }
+            if (text === "Статистика" && active !== "Статистика") {
+              return (
+                <div
+                  className="header-menu-middle-text-block"
+                  key={index}
+                  onClick={() => navigate("/stats")}
+                >
+                  <span className="header-menu-middle-text">Статистика</span>
+                </div>
+              );
+            }
             if (text === "Планер" && active !== "Планер") {
               return (
                 <div
@@ -68,7 +79,10 @@ export const Header = ({ active }) => {
           })}
         </div>
         <div className="header-menu-right-block">
-          <div className="header-menu-right-block-svg" onClick={() => setHelpButton(!helpButton)}>
+          <div
+            className="header-menu-right-block-svg"
+            onClick={() => setHelpButton(!helpButton)}
+          >
             <QuestionSvg />
             {helpButton && (
               <>

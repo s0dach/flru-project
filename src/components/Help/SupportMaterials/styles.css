@@ -1,9 +1,9 @@
 .sup-mat-container {
-  background: #f5faff;
+  background: url(../../../assets/images/background-main-center.png);
+  object-fit: cover;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .sup-mat-text-block {
@@ -79,6 +79,6 @@
   min-width: 893px;
   padding: 25px;
 }
-.mt86 {
-  margin-top: 86px;
+.mt125 {
+  margin-top: 125px;
 }

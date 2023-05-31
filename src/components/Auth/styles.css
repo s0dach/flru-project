@@ -13,12 +13,11 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
   background-size: cover;
 }
 .auth-menu-block {
-  margin: 160px 0;
+  margin-top: 165px;
   width: 502px;
 }
 .auth-menu-up-block {

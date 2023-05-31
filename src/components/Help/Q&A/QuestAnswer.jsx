@@ -9,7 +9,7 @@ export const QuestAnswer = () => {
   const [state2, setState2] = React.useState(false);
   return (
     <div className="quest-answer-container">
-      <div className="mt86">
+      <div className="mt125">
         <div className="quest-answer-text-block">
           <span className="quest-answer-text">Вопрос/Ответ</span>
         </div>

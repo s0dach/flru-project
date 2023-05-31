@@ -4,7 +4,7 @@ import "./styles.css";
 export const SupportMaterials = () => {
   return (
     <div className="sup-mat-container">
-      <div>
+      <div className="mt86">
         <div className="sup-mat-text-block">
           <p className="sup-mat-text-up">Вспомогательные материалы</p>
           <span className="sup-mat-text-down">

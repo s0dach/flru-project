@@ -1,0 +1,49 @@
+.help-button-container {
+    position: absolute;
+    right: 140px;
+    top: 12px;
+  }
+  .help-button-text-block-two {
+    border: 1px solid rgba(194, 201, 209, 0.6);
+  }
+  .help-button-text-block-one {
+    border: 1px solid rgba(194, 201, 209, 0.6);
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  .help-button-text-block-three {
+    border: 1px solid rgba(194, 201, 209, 0.6);
+    border-radius: 0px 0px 10px 10px;
+  }
+  .help-button-text-block-two,
+  .help-button-text-block-one,
+  .help-button-text-block-three {
+    background: #ffffff;
+    height: 57px;
+    width: 287px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .help-button-text-block-two:hover,
+  .help-button-text-block-one:hover,
+  .help-button-text-block-three:hover {
+    background: #00a2ff;
+  }
+  .help-button-text-block-two:hover .help-button-text,
+  .help-button-text-block-one:hover .help-button-text,
+  .help-button-text-block-three:hover .help-button-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+  .help-button-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1d1d1d;
+  }
+  

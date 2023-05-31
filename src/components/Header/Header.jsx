@@ -5,9 +5,11 @@ import { ReactComponent as QuestionSvg } from "../../assets/svgs/question.svg";
 import { ReactComponent as PeopleSvg } from "../../assets/svgs/people.svg";
 import { useNavigate } from "react-router-dom";
 import { MyProfile } from "../UI/MyProfile/MyProfile";
+import { HelpButton } from "../UI/HelpButton/HelpButton";
 
 export const Header = ({ active }) => {
   const [profile, setProfile] = React.useState(false);
+  const [helpButton, setHelpButton] = React.useState(false)
   const MiddleTextArr = [
     "Задания",
     "Дневник",
@@ -66,8 +68,13 @@ export const Header = ({ active }) => {
           })}
         </div>
         <div className="header-menu-right-block">
-          <div className="header-menu-right-block-svg">
+          <div className="header-menu-right-block-svg" onClick={() => setHelpButton(!helpButton)}>
             <QuestionSvg />
+            {helpButton && (
+              <>
+                <HelpButton />
+              </>
+            )}
           </div>
           <div onClick={() => setProfile(!profile)}>
             <PeopleSvg />

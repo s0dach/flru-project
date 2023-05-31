@@ -7,6 +7,8 @@ import { AuthPage } from "./pages/AuthPage";
 import { ProfilePage } from "./pages/ProfilePage";
 import { ResetPassword } from "./pages/ResetPassword";
 import { PaymentPage } from "./pages/PaymentPage";
+import { SupportMaterialPage } from "./pages/SupportMaterialPage";
+import { QuestAnswerPage } from "./pages/QuestAnswerPage";
 
 export const AppRouter = () => {
   return (
@@ -14,6 +16,8 @@ export const AppRouter = () => {
       <Routes>
         <Route path="/" element={<AuthPage />} />
         <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/supportmaterials" element={<SupportMaterialPage />} />
+        <Route path="/qa" element={<QuestAnswerPage />} />
         <Route path="/profile" element={<ResetPassword />} />
         <Route path="/resetpassword" element={<ProfilePage />} />
         <Route path="/home" element={<HomePage />} />

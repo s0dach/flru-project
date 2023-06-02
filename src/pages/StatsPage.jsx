@@ -6,7 +6,7 @@ import { Stats } from "../components/Stats/Stats";
 export const StatsPage = () => {
   return (
     <>
-      <Header />
+      <Header active={"Статистика"} />
       <Stats />
       <Footer />
     </>

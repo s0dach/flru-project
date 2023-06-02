@@ -168,7 +168,14 @@ export const Stats = () => {
                 </span>
               </div>
               <div className="stats-container-down-week-down">
-                <div className="stats-container-down-week-down-ellipse"></div>
+                <div class="circle">
+                  <div class="section1"></div>
+                  <div class="section2"></div>
+                  <div class="section3"></div>
+                  <div class="section4"></div>
+                  <div class="section5"></div>
+                  <div class="section6"></div>
+                </div>
               </div>
             </div>
             <div className="stats-container-down-week-ml">

@@ -57,6 +57,25 @@ export const HomeMain = () => {
                   </div>
                 );
               }
+              if (text === "Теория") {
+                return (
+                  <div
+                    className="homeMain-menu-middle-text-block"
+                    key={index}
+                    onClick={() => navigate("/theory")}
+                  >
+                    <span
+                      className={
+                        scroll < 1
+                          ? "homeMain-menu-middle-text"
+                          : "homeMain-menu-middle-text-scroll"
+                      }
+                    >
+                      {text}
+                    </span>
+                  </div>
+                );
+              }
               if (text === "Задания") {
                 return (
                   <div

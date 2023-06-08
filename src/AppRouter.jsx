@@ -10,6 +10,7 @@ import { PaymentPage } from "./pages/PaymentPage";
 import { SupportMaterialPage } from "./pages/SupportMaterialPage";
 import { QuestAnswerPage } from "./pages/QuestAnswerPage";
 import { StatsPage } from "./pages/StatsPage";
+import { TheoryPage } from "./pages/TheoryPage";
 
 export const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ export const AppRouter = () => {
       <Routes>
         <Route path="/" element={<AuthPage />} />
         <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/theory" element={<TheoryPage />} />
         <Route path="/stats" element={<StatsPage />} />
         <Route path="/supportmaterials" element={<SupportMaterialPage />} />
         <Route path="/qa" element={<QuestAnswerPage />} />

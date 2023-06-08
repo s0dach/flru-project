@@ -64,6 +64,17 @@ export const Header = ({ active }) => {
                 </div>
               );
             }
+            if (text === "Теория" && active !== "Теория") {
+              return (
+                <div
+                  className="header-menu-middle-text-block"
+                  key={index}
+                  onClick={() => navigate("/theory")}
+                >
+                  <span className="header-menu-middle-text">{text}</span>
+                </div>
+              );
+            }
             if (text === active) {
               return (
                 <div className="header-menu-middle-text-block" key={index}>

@@ -5,7 +5,7 @@ import { ReactComponent as ExpandActSvg } from "../../../assets/svgs/taskssvg/ex
 import { ReactComponent as ExpandDisSvg } from "../../../assets/svgs/taskssvg/expandDis.svg";
 import { ReactComponent as CheckboxSvg } from "../../../assets/svgs/taskssvg/checkbox.svg";
 
-export const TasksStages = () => {
+export const TasksStages = ({ setSchema, setQuestion, setTarget }) => {
   const [expand, setExpand] = React.useState(false);
   const [expand1, setExpand1] = React.useState(false);
   const [expand2, setExpand2] = React.useState(false);
@@ -35,7 +35,7 @@ export const TasksStages = () => {
             <div className="tasks-stages-container-down-block">
               <div className="tasks-stages-container-down-block-childFirst">
                 <span className="tasks-stages-container-down-block-child-text">
-                  Видео Введения
+                  test
                 </span>
                 <div className="tasks-stages-container-down-block-child-svg">
                   <CheckboxSvg />
@@ -84,16 +84,45 @@ export const TasksStages = () => {
           {expand1 && (
             <div className="tasks-stages-container-down-block">
               <div className="tasks-stages-container-down-block-childFirst">
-                <span className="tasks-stages-container-down-block-child-text">
-                  Видео Введения
+                <span
+                  className="tasks-stages-container-down-block-child-text"
+                  onClick={() => {
+                    setTarget(false);
+                    setSchema(true);
+                    setQuestion(false);
+                  }}
+                >
+                  Схема работы по этапу
                 </span>
                 <div className="tasks-stages-container-down-block-child-svg">
                   <CheckboxSvg />
                 </div>
               </div>
               <div className="tasks-stages-container-down-block-child">
-                <span className="tasks-stages-container-down-block-child-text">
-                  Видео Введения
+                <span
+                  className="tasks-stages-container-down-block-child-text"
+                  onClick={() => {
+                    setTarget(true);
+                    setSchema(false);
+                    setQuestion(false);
+                  }}
+                >
+                  Постановка цели и подбор развивающего дела 5/5
+                </span>
+                <div className="tasks-stages-container-down-block-child-svg">
+                  {/* <CheckboxSvg /> */}
+                </div>
+              </div>
+              <div className="tasks-stages-container-down-block-child">
+                <span
+                  className="tasks-stages-container-down-block-child-text"
+                  onClick={() => {
+                    setQuestion(true);
+                    setSchema(false);
+                    setTarget(false);
+                  }}
+                >
+                  Проверочные вопросы к этапу 1
                 </span>
                 <div className="tasks-stages-container-down-block-child-svg">
                   {/* <CheckboxSvg /> */}

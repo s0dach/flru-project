@@ -27,6 +27,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 19px;
+  max-width: 176px;
 }
 .tasks-stages-container-down-block-childFirst {
   display: flex;

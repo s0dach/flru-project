@@ -8,6 +8,7 @@ import { ReactComponent as SecondStatSvg } from "../../assets/svgs/stats/twostat
 import { ReactComponent as LastStatSvg } from "../../assets/svgs/stats/threestat.svg";
 import { ReactComponent as DisCheckBoxSvg } from "../../assets/svgs/stats/checkbox-dis.svg";
 import { ReactComponent as ActCheckBoxSvg } from "../../assets/svgs/stats/checkbox-act.svg";
+import ReactPlayer from "react-player";
 
 export const Stats = () => {
   const [state, setState] = React.useState(false);

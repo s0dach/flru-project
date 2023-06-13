@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles.css";
+import { Player } from "video-react";
+import "../../../../node_modules/video-react/dist/video-react.css";
 
 export const SupportMaterials = () => {
   return (
@@ -13,7 +15,11 @@ export const SupportMaterials = () => {
           </span>
         </div>
         <div className="sup-mat-video-block">
-          <div className="sup-mat-video"></div>
+          <div className="sup-mat-video">    <Player
+      playsInline
+      poster="/assets/poster.png"
+      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+    /></div>
           <div className="sup-mat-video-text-block">
             <span className="sup-mat-video-text-up">Заголовок</span>
             <div className="sup-mat-video-text-child-block">

@@ -1,0 +1,62 @@
+.video-comp-container {
+  background: url(../../assets/images/background-main-center.png);
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.video-header {
+  display: flex;
+  align-items: center;
+}
+.video-header-svg {
+  margin-right: 29px;
+}
+.video-header-text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #1d1d1d;
+}
+.video-comp-container-child {
+  width: 1600px;
+  margin-top: 120px;
+}
+.video-main-menu-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.video-main-menu {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.video-player {
+  width: 501px;
+  height: 303px;
+  background: linear-gradient(
+    117.17deg,
+    #00a2ff 0.76%,
+    #1b75de 51.77%,
+    #113045 100%
+  );
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.05),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+  border-radius: 13px;
+}
+.video-main {
+  margin-top: 26px;
+}
+.video-main-menu-last {
+  margin-bottom: 54px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import { Player } from "video-react";
+import { BigPlayButton, Player , PosterImage } from "video-react";
 
 export const VideoComponent = () => {
   return (
@@ -45,55 +45,69 @@ export const VideoComponent = () => {
             <div className="video-player">
               <Player
                 playsInline
-                poster="/assets/poster.png"
+                poster="./assets/images/poster11.png"
                 src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-              />
+              >
+              <BigPlayButton position="center" />
+              </Player>
             </div>
             <div className="video-player">
               <Player
                 playsInline
-                poster="/assets/poster.png"
+                poster="./assets/images/poster11.png"
                 src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-              />
+              >
+              <BigPlayButton position="center" />
+              </Player>
             </div>
             <div className="video-player">
               <Player
                 playsInline
-                poster="/assets/poster.png"
+                poster="./assets/images/poster11.png"
                 src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-              />
+              >
+              <BigPlayButton position="center" />
+              </Player>
             </div>
           </div>
           <div className="video-main-menu">
             <div className="video-player">
               <Player
                 playsInline
-                poster="/assets/poster.png"
+                poster="./assets/images/poster11.png"
                 src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-              />
+              >
+              <BigPlayButton position="center" />
+              </Player>
             </div>
             <div className="video-player">
               <Player
                 playsInline
-                poster="/assets/poster.png"
+                poster="./assets/images/poster11.png"
                 src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-              />
+              >
+              <BigPlayButton position="center" />
+              </Player>
             </div>
             <div className="video-player">
               <Player
                 playsInline
-                poster="/assets/poster.png"
+                poster="./assets/images/poster11.png"
                 src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-              />
+              >
+              <BigPlayButton position="center" />
+              </Player>
             </div>
           </div>
           <div className="video-main-menu-last">
             <div className="video-player">
               <Player
                 playsInline
-                poster="/assets/poster.png"
+                poster="./assets/images/poster11.png"
                 src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-              />
+              >
+              <BigPlayButton position="center" />
+              </Player>
             </div>
           </div>
         </div>

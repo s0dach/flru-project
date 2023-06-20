@@ -60,3 +60,19 @@
   align-items: center;
   justify-content: space-between;
 }
+.video-react .video-react-poster {
+  background-image: url(./poster11.png) !important;
+  background-size: auto !important;
+  background: linear-gradient(117.17deg, #00A2FF 0.76%, #1B75DE 51.77%, #113045 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.video-react {
+  background-color: transparent !important;
+}
+.video-react .video-react-big-play-button {
+  width: 68px !important;
+  height: 68px !important;
+  border-radius: 50%;
+  line-height: 68px;
+}

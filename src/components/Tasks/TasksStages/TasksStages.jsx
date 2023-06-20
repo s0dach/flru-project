@@ -11,176 +11,177 @@ export const TasksStages = ({ setSchema, setQuestion, setTarget }) => {
   const [expand2, setExpand2] = React.useState(false);
   return (
     <div className="tasks-stages-container">
-      <div className="arrowBlock">
-        <div className="tasks-stages-container-first-block">
-          <div className="tasks-stages-container-up-block">
-            <div className="tasks-stages-container-up-block-svg-text-block">
-              <div className="tasks-stages-container-up-block-svg-text-block-new">
-                <div className="tasks-stages-container-up-block-svg-text-block-ellipse">
-                  <EllipseSvg />
-                </div>
-                <span className="tasks-stages-container-up-block-text">
-                  Введение
-                </span>
+      <div className="tasks-stages-container-first-block">
+        <div className="tasks-stages-container-up-block">
+          <div className="tasks-stages-container-up-block-svg-text-block">
+            <div className="tasks-stages-container-up-block-svg-text-block-new">
+              <div class="line-item"></div>
+              <div className="tasks-stages-container-up-block-svg-text-block-ellipse">
+                <EllipseSvg />
               </div>
-            </div>
-            <div
-              className="tasks-stages-container-up-block-expand-svg"
-              onClick={() => setExpand(!expand)}
-            >
-              {expand ? <ExpandActSvg /> : <ExpandDisSvg />}
+              <span className="tasks-stages-container-up-block-text">
+                Введение
+              </span>
             </div>
           </div>
-          {expand && (
-            <div className="tasks-stages-container-down-block">
-              <div className="tasks-stages-container-down-block-childFirst">
-                <span className="tasks-stages-container-down-block-child-text">
-                  test
-                </span>
-                <div className="tasks-stages-container-down-block-child-svg">
-                  <CheckboxSvg />
-                </div>
-              </div>
-              <div className="tasks-stages-container-down-block-child">
-                <span className="tasks-stages-container-down-block-child-text">
-                  Видео Введения
-                </span>
-                <div className="tasks-stages-container-down-block-child-svg">
-                  {/* <CheckboxSvg /> */}
-                </div>
-              </div>
-            </div>
-          )}
+          <div
+            className="tasks-stages-container-up-block-expand-svg"
+            onClick={() => setExpand(!expand)}
+          >
+            {expand ? <ExpandActSvg /> : <ExpandDisSvg />}
+          </div>
         </div>
-        <div className="tasks-stages-container-etc-block">
-          <div className="tasks-stages-container-up-block">
-            <div className="tasks-stages-container-up-block-svg-text-block">
-              <div className="tasks-stages-container-up-block-svg-text-block-child-text-block">
-                <div className="tasks-stages-container-up-block-svg-text-block-ellipse">
-                  <EllipseSvg />
-                </div>
-                <span className="tasks-stages-container-up-block-text">
-                  Этап 1
-                </span>
-                <div className="tasks-stages-container-up-block-date-block">
-                  <span className="tasks-stages-container-up-block-date-text">
-                    7 июля-13 июля
-                  </span>
-                </div>
-              </div>
-              <div className="tasks-stages-container-up-block-svg-text-block-child-text-block-down">
-                <span className="tasks-stages-container-up-block-svg-text-block-child-text-block-down-text">
-                  Подготовка к работе
-                </span>
+        {expand && (
+          <div className="tasks-stages-container-down-block">
+            <div className="tasks-stages-container-down-block-childFirst">
+              <span className="tasks-stages-container-down-block-child-text">
+                test
+              </span>
+              <div className="tasks-stages-container-down-block-child-svg">
+                <CheckboxSvg />
               </div>
             </div>
-            <div
-              className="tasks-stages-container-up-block-expand-svg"
-              onClick={() => setExpand1(!expand1)}
-            >
-              {expand1 ? <ExpandActSvg /> : <ExpandDisSvg />}
+            <div className="tasks-stages-container-down-block-child">
+              <span className="tasks-stages-container-down-block-child-text">
+                Видео Введения
+              </span>
+              <div className="tasks-stages-container-down-block-child-svg">
+                {/* <CheckboxSvg /> */}
+              </div>
             </div>
           </div>
-          {expand1 && (
-            <div className="tasks-stages-container-down-block">
-              <div className="tasks-stages-container-down-block-childFirst">
-                <span
-                  className="tasks-stages-container-down-block-child-text"
-                  onClick={() => {
-                    setTarget(false);
-                    setSchema(true);
-                    setQuestion(false);
-                  }}
-                >
-                  Схема работы по этапу
-                </span>
-                <div className="tasks-stages-container-down-block-child-svg">
-                  <CheckboxSvg />
-                </div>
+        )}
+      </div>
+      <div className="tasks-stages-container-etc-block">
+        <div className="tasks-stages-container-up-block">
+          <div className="tasks-stages-container-up-block-svg-text-block">
+            <div className="tasks-stages-container-up-block-svg-text-block-child-text-block">
+              <div class="line-item"></div>
+              <div className="tasks-stages-container-up-block-svg-text-block-ellipse">
+                <EllipseSvg />
               </div>
-              <div className="tasks-stages-container-down-block-child">
-                <span
-                  className="tasks-stages-container-down-block-child-text"
-                  onClick={() => {
-                    setTarget(true);
-                    setSchema(false);
-                    setQuestion(false);
-                  }}
-                >
-                  Постановка цели и подбор развивающего дела 5/5
-                </span>
-                <div className="tasks-stages-container-down-block-child-svg">
-                  {/* <CheckboxSvg /> */}
-                </div>
-              </div>
-              <div className="tasks-stages-container-down-block-child">
-                <span
-                  className="tasks-stages-container-down-block-child-text"
-                  onClick={() => {
-                    setQuestion(true);
-                    setSchema(false);
-                    setTarget(false);
-                  }}
-                >
-                  Проверочные вопросы к этапу 1
-                </span>
-                <div className="tasks-stages-container-down-block-child-svg">
-                  {/* <CheckboxSvg /> */}
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-        <div className="tasks-stages-container-etc-block">
-          <div className="tasks-stages-container-up-block">
-            <div className="tasks-stages-container-up-block-svg-text-block">
-              <div className="tasks-stages-container-up-block-svg-text-block-child-text-block">
-                <div className="tasks-stages-container-up-block-svg-text-block-ellipse">
-                  <EllipseSvg />
-                </div>
-                <span className="tasks-stages-container-up-block-text">
-                  Этап 1
-                </span>
-                <div className="tasks-stages-container-up-block-date-block">
-                  <span className="tasks-stages-container-up-block-date-text">
-                    7 июля-13 июля
-                  </span>
-                </div>
-              </div>
-              <div className="tasks-stages-container-up-block-svg-text-block-child-text-block-down">
-                <span className="tasks-stages-container-up-block-svg-text-block-child-text-block-down-text">
-                  Подготовка к работе
+              <span className="tasks-stages-container-up-block-text">
+                Этап 1
+              </span>
+              <div className="tasks-stages-container-up-block-date-block">
+                <span className="tasks-stages-container-up-block-date-text">
+                  7 июля-13 июля
                 </span>
               </div>
             </div>
-            <div
-              className="tasks-stages-container-up-block-expand-svg"
-              onClick={() => setExpand2(!expand2)}
-            >
-              {expand2 ? <ExpandActSvg /> : <ExpandDisSvg />}
+            <div className="tasks-stages-container-up-block-svg-text-block-child-text-block-down">
+              <span className="tasks-stages-container-up-block-svg-text-block-child-text-block-down-text">
+                Подготовка к работе
+              </span>
             </div>
           </div>
-          {expand2 && (
-            <div className="tasks-stages-container-down-block">
-              <div className="tasks-stages-container-down-block-childFirst">
-                <span className="tasks-stages-container-down-block-child-text">
-                  Видео Введения
-                </span>
-                <div className="tasks-stages-container-down-block-child-svg">
-                  <CheckboxSvg />
-                </div>
-              </div>
-              <div className="tasks-stages-container-down-block-child">
-                <span className="tasks-stages-container-down-block-child-text">
-                  Видео Введения
-                </span>
-                <div className="tasks-stages-container-down-block-child-svg">
-                  {/* <CheckboxSvg /> */}
-                </div>
+          <div
+            className="tasks-stages-container-up-block-expand-svg"
+            onClick={() => setExpand1(!expand1)}
+          >
+            {expand1 ? <ExpandActSvg /> : <ExpandDisSvg />}
+          </div>
+        </div>
+        {expand1 && (
+          <div className="tasks-stages-container-down-block">
+            <div className="tasks-stages-container-down-block-childFirst">
+              <span
+                className="tasks-stages-container-down-block-child-text"
+                onClick={() => {
+                  setTarget(false);
+                  setSchema(true);
+                  setQuestion(false);
+                }}
+              >
+                Схема работы по этапу
+              </span>
+              <div className="tasks-stages-container-down-block-child-svg">
+                <CheckboxSvg />
               </div>
             </div>
-          )}
+            <div className="tasks-stages-container-down-block-child">
+              <span
+                className="tasks-stages-container-down-block-child-text"
+                onClick={() => {
+                  setTarget(true);
+                  setSchema(false);
+                  setQuestion(false);
+                }}
+              >
+                Постановка цели и подбор развивающего дела 5/5
+              </span>
+              <div className="tasks-stages-container-down-block-child-svg">
+                {/* <CheckboxSvg /> */}
+              </div>
+            </div>
+            <div className="tasks-stages-container-down-block-child">
+              <span
+                className="tasks-stages-container-down-block-child-text"
+                onClick={() => {
+                  setQuestion(true);
+                  setSchema(false);
+                  setTarget(false);
+                }}
+              >
+                Проверочные вопросы к этапу 1
+              </span>
+              <div className="tasks-stages-container-down-block-child-svg">
+                {/* <CheckboxSvg /> */}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+      <div className="tasks-stages-container-etc-block">
+        <div className="tasks-stages-container-up-block">
+          <div className="tasks-stages-container-up-block-svg-text-block">
+            <div className="tasks-stages-container-up-block-svg-text-block-child-text-block">
+              {expand2 && <div class="line-item"></div>}
+              <div className="tasks-stages-container-up-block-svg-text-block-ellipse">
+                <EllipseSvg />
+              </div>
+              <span className="tasks-stages-container-up-block-text">
+                Этап 1
+              </span>
+              <div className="tasks-stages-container-up-block-date-block">
+                <span className="tasks-stages-container-up-block-date-text">
+                  7 июля-13 июля
+                </span>
+              </div>
+            </div>
+            <div className="tasks-stages-container-up-block-svg-text-block-child-text-block-down">
+              <span className="tasks-stages-container-up-block-svg-text-block-child-text-block-down-text">
+                Подготовка к работе
+              </span>
+            </div>
+          </div>
+          <div
+            className="tasks-stages-container-up-block-expand-svg"
+            onClick={() => setExpand2(!expand2)}
+          >
+            {expand2 ? <ExpandActSvg /> : <ExpandDisSvg />}
+          </div>
         </div>
+        {expand2 && (
+          <div className="tasks-stages-container-down-block">
+            <div className="tasks-stages-container-down-block-childFirst">
+              <span className="tasks-stages-container-down-block-child-text">
+                Видео Введения
+              </span>
+              <div className="tasks-stages-container-down-block-child-svg">
+                <CheckboxSvg />
+              </div>
+            </div>
+            <div className="tasks-stages-container-down-block-child">
+              <span className="tasks-stages-container-down-block-child-text">
+                Видео Введения
+              </span>
+              <div className="tasks-stages-container-down-block-child-svg">
+                {/* <CheckboxSvg /> */}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

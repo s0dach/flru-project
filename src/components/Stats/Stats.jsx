@@ -169,6 +169,11 @@ export const Stats = () => {
                 </span>
               </div>
               <div className="stats-container-down-week-down">
+                <div className="stats-container-down-week-down-circle">
+                  <span className="stats-container-down-week-down-text">
+                    4 из 5
+                  </span>
+                </div>
                 <section class="chart">
                   <div
                     class="triangle"

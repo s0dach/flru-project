@@ -169,14 +169,50 @@ export const Stats = () => {
                 </span>
               </div>
               <div className="stats-container-down-week-down">
-                <div class="circle">
-                  <div class="section1"></div>
-                  <div class="section2"></div>
-                  <div class="section3"></div>
-                  <div class="section4"></div>
-                  <div class="section5"></div>
-                  <div class="section6"></div>
-                </div>
+                <section class="chart">
+                  <div
+                    class="triangle"
+                    style={{ transform: "rotate(   0deg)" }}
+                  >
+                    <div class="circle" style={{ background: "#C2C9D1" }}></div>
+                  </div>
+                  <div
+                    class="triangle"
+                    style={{ transform: "rotate( -60deg)" }}
+                  >
+                    <div class="circle" style={{ background: "#1457A4" }}></div>
+                  </div>
+                  <div
+                    class="triangle"
+                    style={{ transform: "rotate(-120deg)" }}
+                  >
+                    <div class="circle" style={{ background: "#1457A4" }}></div>
+                  </div>
+                  <div
+                    class="triangle"
+                    style={{ transform: "rotate(-180deg)" }}
+                  >
+                    <div class="circle" style={{ background: "#00A2FF" }}></div>
+                  </div>
+                  <div
+                    class="triangle"
+                    style={{ transform: "rotate(-180deg)" }}
+                  >
+                    <div class="circle" style={{ background: "#00A2FF" }}></div>
+                  </div>
+                  <div
+                    class="triangle"
+                    style={{ transform: "rotate(-240deg)" }}
+                  >
+                    <div class="circle" style={{ background: "#00A2FF" }}></div>
+                  </div>
+                  <div
+                    class="triangle"
+                    style={{ transform: "rotate(-300deg)" }}
+                  >
+                    <div class="circle" style={{ background: "#00A2FF" }}></div>
+                  </div>
+                </section>
               </div>
             </div>
             <div className="stats-container-down-week-ml">

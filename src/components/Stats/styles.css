@@ -316,53 +316,38 @@
 }
 
 /*  */
-.circle {
-  width: 129px;
-  height: 129px;
-  border-radius: 50%;
-  background-color: lightgray;
+section {
+  width: 12em;
+  margin: auto;
+}
+
+.chart {
   position: relative;
+  overflow: hidden; /* .triangle выходят за пределы */
 }
 
-.section1,
-.section2,
-.section3,
-.section4,
-.section5,
-.section6 {
+.chart:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.triangle {
   position: absolute;
-  top: 0;
   left: 0;
-  width: 50%;
-  height: 50%;
+  top: 0;
+  right: 0;
+  bottom: 50%;
+  transform-origin: center bottom;
+  overflow: hidden;
 }
 
-.section1 {
-  clip-path: polygon(0 0, 100% 0, 100% 50%);
-  background-color: blue;
-}
-
-.section2 {
-  clip-path: polygon(0 0, 100% 50%, 50% 100%);
-  background-color: green;
-}
-
-.section3 {
-  clip-path: polygon(50% 0, 100% 0, 50% 50%);
-  background-color: yellow;
-}
-
-.section4 {
-  clip-path: polygon(50% 50%, 100% 50%, 50% 100%);
-  background-color: orange;
-}
-
-.section5 {
-  clip-path: polygon(50% 50%, 100% 50%, 50% 0);
-  background-color: purple;
-}
-
-.section6 {
-  clip-path: polygon(0 50%, 50% 50%, 50% 100%);
-  background-color: red;
+.circle {
+  height: 100%;
+  width: 100%;
+  background: silver;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  transform-origin: center bottom;
+  transform: rotate(120deg);
+  border: 1px solid #fff;
 }

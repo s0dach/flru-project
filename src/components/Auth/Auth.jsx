@@ -1,11 +1,15 @@
 import React from "react";
 import "./styles.css";
 import { ReactComponent as LogoSvg } from "../../assets/svgs/leftMain.svg";
+import { ReactComponent as CheckBoxAct } from "../../assets/svgs/stats/checkboxactauth.svg";
+import { ReactComponent as CheckBoxDis } from "../../assets/svgs/stats/checkboxdisauth.svg";
 
 export const Auth = () => {
   //   const [passwordСipher, setPasswordСipher] = React.useState(false);
   const [registration, setRegistration] = React.useState(true);
   const [restore, setRestore] = React.useState(false);
+  const [state, setState] = React.useState(false);
+  const [state1, setState1] = React.useState(false);
   return (
     <div className="auth-container">
       {/* {restore && (
@@ -75,12 +79,9 @@ export const Auth = () => {
           <>
             <div className="auth-menu-policy-block">
               <div className="auth-menu-policy-block-checkbox-block">
-                <div className="checkmark-height">
-                  <label class="container">
-                    <input type="checkbox" />
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
+
+                   {state ? <CheckBoxAct onClick={() => setState(!state)}/> : <CheckBoxDis onClick={() => setState(!state)}/>}   
+           
                 <div className="auth-menu-policy-block-checkbox-block-child">
                   <span className="auth-menu-policy-block-checkbox-block-text">
                     Согласен с
@@ -97,11 +98,8 @@ export const Auth = () => {
             </div>
             <div className="auth-menu-policy-block-two">
               <div className="auth-menu-policy-block-checkbox-block">
-                <div className="checkmark-height">
-                  <label class="container">
-                    <input type="checkbox" />
-                    <span class="checkmark"></span>
-                  </label>
+                <div className="checkmark-height" onClick={() => setState1(!state1)}>
+                {state1 ? <CheckBoxAct/> : <CheckBoxDis/>}   
                 </div>
                 <div className="auth-menu-policy-block-checkbox-block-child">
                   <a

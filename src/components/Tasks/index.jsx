@@ -18,8 +18,9 @@ export const Tasks = () => {
   return (
     <>
       <Header active={"Задания"} />
-      <div className="tasks-container  background-filter">
-        <div className="wrap-bg"></div>
+      <div className="background-filter">
+      <div className="container-tasks">
+      <div className="tasks-container">
         <TasksStages
           setSchema={setSchema}
           setQuestion={setQuestion}
@@ -47,6 +48,8 @@ export const Tasks = () => {
           {/* <TasksStepOne />
           <TasksTwoCases /> */}
         </div>
+      </div>
+      </div>
       </div>
       <TasksModal active={active} setActive={setActive} />
     </>

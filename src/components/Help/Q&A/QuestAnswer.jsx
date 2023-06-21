@@ -21,12 +21,13 @@ export const QuestAnswer = () => {
                   ? "quest-answer-item-child-block"
                   : "quest-answer-item-child-block-non"
               }
+              onClick={() => setState(!state)}
             >
               <span className="quest-answer-item-child-block-text">
                 Когда встречи с ведущим?
               </span>
 
-              <div onClick={() => setState(!state)}>
+              <div>
                 {!state ? <HelpDis /> : <HelpAct />}
               </div>
             </div>
@@ -47,12 +48,13 @@ export const QuestAnswer = () => {
                   ? "quest-answer-item-child-block"
                   : "quest-answer-item-child-block-non"
               }
+              onClick={() => setState1(!state1)}
             >
               <span className="quest-answer-item-child-block-text">
                 Что может дать мне курс саморазвития?
               </span>
 
-              <div onClick={() => setState1(!state1)}>
+              <div>
                 {!state1 ? <HelpDis /> : <HelpAct />}
               </div>
             </div>
@@ -73,12 +75,13 @@ export const QuestAnswer = () => {
                   ? "quest-answer-item-child-block"
                   : "quest-answer-item-child-block-non"
               }
+              onClick={() => setState2(!state2)}
             >
               <span className="quest-answer-item-child-block-text">
                 Зачем нужен планер?
               </span>
 
-              <div onClick={() => setState2(!state2)}>
+              <div>
                 {!state2 ? <HelpDis /> : <HelpAct />}
               </div>
             </div>

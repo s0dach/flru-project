@@ -11,6 +11,7 @@
 .tasks-stages-container-up-block {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .tasks-stages-container-up-block-text {
   margin-left: 12px;
@@ -28,12 +29,14 @@
   align-items: center;
   margin-top: 19px;
   max-width: 176px;
+  cursor: pointer;
 }
 .tasks-stages-container-down-block-childFirst {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 14px;
+  cursor: pointer;
 }
 .tasks-stages-container-down-block-child-text {
   font-style: normal;

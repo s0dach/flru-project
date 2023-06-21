@@ -8,18 +8,8 @@
   top: 86px;
   position: relative;
 }
-.background-filter::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background-size: cover;
-}
-
 .background-filter {
-  position: relative;
+  background: url(../../../assets/images/background-main-center.png);
 }
 .planer-menu-container-up-block {
   display: flex;

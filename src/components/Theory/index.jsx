@@ -5,8 +5,9 @@ import { TheoryFirst } from './TheoryFirst'
 export const Theory = () =>{
   return (
     <>
-    <div className="tasks-container  background-filter">
-      <div className="wrap-bg"></div>
+    <div className='background-filter'>
+    <div className="container-tasks">
+    <div className="tasks-container">
       <TheoryStage />
       <div className="tasks-container-left-up-block-rod">
         <div
@@ -27,6 +28,8 @@ export const Theory = () =>{
         <TasksTwoCases /> */}
         <TheoryFirst />
       </div>
+      </div>
+    </div>
     </div>
   </>
   )

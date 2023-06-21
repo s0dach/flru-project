@@ -7,9 +7,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import { useNavigate } from "react-router-dom";
 
 export const HomeMainCenter = () => {
-  const textArr = ["Как пользоваться", "Опыт других", "Схема работы"];
+  const navigate = useNavigate()
+  const textArr = ["Как пользоваться", "Схема работы", "Опыт других"];
 
   return (
     <div className="homeMain-container-center">
@@ -32,7 +34,7 @@ export const HomeMainCenter = () => {
                       Разнообразный и богатый опыт начало повседневной работы
                     </span>
                   </div>
-                  <div className="homeMain-container-center-up-block-menuCont-text-down-block">
+                  <div className="homeMain-container-center-up-block-menuCont-text-down-block" onClick={() => navigate('/tasks')}>
                     <span className="homeMain-container-center-up-block-menuCont-text-down">
                       Подробнее
                     </span>
@@ -55,7 +57,7 @@ export const HomeMainCenter = () => {
                     Разнообразный и богатый опыт начало повседневной работы
                   </span>
                 </div>
-                <div className="homeMain-container-center-up-block-menuCont-text-down-block">
+                <div className="homeMain-container-center-up-block-menuCont-text-down-block" onClick={() => navigate('/tasks')}>
                   <span className="homeMain-container-center-up-block-menuCont-text-down">
                     Подробнее
                   </span>

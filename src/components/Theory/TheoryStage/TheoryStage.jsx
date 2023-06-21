@@ -10,7 +10,7 @@ export const TheoryStage = () => {
   return (
     <div className="tasks-stages-container">
       <div className="tasks-stages-container-etc-block">
-        <div className="tasks-stages-container-up-block">
+        <div className="tasks-stages-container-up-block"   onClick={() => setExpand1(!expand1)}>
           <div className="tasks-stages-container-up-block-svg-text-block">
             <div className="tasks-stages-container-up-block-svg-text-block-child-text-block">
               <div class="line-item"></div>
@@ -34,7 +34,7 @@ export const TheoryStage = () => {
           </div>
           <div
             className="tasks-stages-container-up-block-expand-svg"
-            onClick={() => setExpand1(!expand1)}
+          
           >
             {expand1 ? <ExpandActSvg /> : <ExpandDisSvg />}
           </div>
@@ -61,7 +61,7 @@ export const TheoryStage = () => {
         )}
       </div>
       <div className="tasks-stages-container-etc-block">
-        <div className="tasks-stages-container-up-block">
+        <div className="tasks-stages-container-up-block" onClick={() => setExpand2(!expand2)}>
           <div className="tasks-stages-container-up-block-svg-text-block">
             <div className="tasks-stages-container-up-block-svg-text-block-child-text-block">
               {expand2 && <div class="line-item"></div>}
@@ -85,7 +85,7 @@ export const TheoryStage = () => {
           </div>
           <div
             className="tasks-stages-container-up-block-expand-svg"
-            onClick={() => setExpand2(!expand2)}
+            
           >
             {expand2 ? <ExpandActSvg /> : <ExpandDisSvg />}
           </div>

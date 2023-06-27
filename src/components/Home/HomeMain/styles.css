@@ -16,8 +16,10 @@
   right: 0;
   max-width: 1600px;
   top: 24px;
+  padding: 0 26px;
 }
 .homeMain-menu-block-scroll {
+  max-width: 1600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +31,7 @@
   top: 0;
   background-color: #ffffff;
   z-index: 500;
-  padding: 13px 24px 18px 24px;
+  padding: 24px 26px;
 }
 .homeMain-menu-middle-block {
   display: flex;
@@ -111,4 +113,24 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+}
+.homeMain-menu-uppp-block {
+  display: flex;
+  align-items: center;
+}
+.homeMain-menu-course-block {
+  width: 232px;
+  height: 57px;
+  border-radius: 13px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  color: #00a2ff;
+  cursor: pointer;
+  margin-right: 31px;
 }

@@ -36,15 +36,68 @@ export const HomeMain = () => {
           <div className="homeMain-menu-left-block">
             <LeftMainSvg />
           </div>
-          <div className="homeMain-menu-middle-block">
-            {MiddleTextArr.map((text, index) => {
-              if (text === "Планер") {
+          <div className="homeMain-menu-uppp-block">
+            <div className="homeMain-menu-middle-block">
+              {MiddleTextArr.map((text, index) => {
+                if (text === "Планер") {
+                  return (
+                    <div
+                      className="homeMain-menu-middle-text-block"
+                      key={index}
+                      onClick={() => navigate("/planer")}
+                    >
+                      <span
+                        className={
+                          scroll < 1
+                            ? "homeMain-menu-middle-text"
+                            : "homeMain-menu-middle-text-scroll"
+                        }
+                      >
+                        {text}
+                      </span>
+                    </div>
+                  );
+                }
+                if (text === "Теория") {
+                  return (
+                    <div
+                      className="homeMain-menu-middle-text-block"
+                      key={index}
+                      onClick={() => navigate("/theory")}
+                    >
+                      <span
+                        className={
+                          scroll < 1
+                            ? "homeMain-menu-middle-text"
+                            : "homeMain-menu-middle-text-scroll"
+                        }
+                      >
+                        {text}
+                      </span>
+                    </div>
+                  );
+                }
+                if (text === "Задания") {
+                  return (
+                    <div
+                      className="homeMain-menu-middle-text-block"
+                      key={index}
+                      onClick={() => navigate("/tasks")}
+                    >
+                      <span
+                        className={
+                          scroll < 1
+                            ? "homeMain-menu-middle-text"
+                            : "homeMain-menu-middle-text-scroll"
+                        }
+                      >
+                        {text}
+                      </span>
+                    </div>
+                  );
+                }
                 return (
-                  <div
-                    className="homeMain-menu-middle-text-block"
-                    key={index}
-                    onClick={() => navigate("/planer")}
-                  >
+                  <div className="homeMain-menu-middle-text-block" key={index}>
                     <span
                       className={
                         scroll < 1
@@ -56,66 +109,16 @@ export const HomeMain = () => {
                     </span>
                   </div>
                 );
-              }
-              if (text === "Теория") {
-                return (
-                  <div
-                    className="homeMain-menu-middle-text-block"
-                    key={index}
-                    onClick={() => navigate("/theory")}
-                  >
-                    <span
-                      className={
-                        scroll < 1
-                          ? "homeMain-menu-middle-text"
-                          : "homeMain-menu-middle-text-scroll"
-                      }
-                    >
-                      {text}
-                    </span>
-                  </div>
-                );
-              }
-              if (text === "Задания") {
-                return (
-                  <div
-                    className="homeMain-menu-middle-text-block"
-                    key={index}
-                    onClick={() => navigate("/tasks")}
-                  >
-                    <span
-                      className={
-                        scroll < 1
-                          ? "homeMain-menu-middle-text"
-                          : "homeMain-menu-middle-text-scroll"
-                      }
-                    >
-                      {text}
-                    </span>
-                  </div>
-                );
-              }
-              return (
-                <div className="homeMain-menu-middle-text-block" key={index}>
-                  <span
-                    className={
-                      scroll < 1
-                        ? "homeMain-menu-middle-text"
-                        : "homeMain-menu-middle-text-scroll"
-                    }
-                  >
-                    {text}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-          <div className="homeMain-menu-right-block">
-            <div className="homeMain-menu-right-block-svg">
-              <QuestionSvg />
+              })}
             </div>
-            <div>
-              <PeopleSvg />
+            <div className="homeMain-menu-course-block">Приобрести курс</div>
+            <div className="homeMain-menu-right-block">
+              <div className="homeMain-menu-right-block-svg">
+                <QuestionSvg />
+              </div>
+              <div>
+                <PeopleSvg />
+              </div>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { ReactComponent as ExpandActSvg } from "../../../assets/svgs/taskssvg/ex
 import { ReactComponent as ExpandDisSvg } from "../../../assets/svgs/taskssvg/expandDis.svg";
 import { ReactComponent as CheckboxSvg } from "../../../assets/svgs/taskssvg/checkbox.svg";
 
-export const TasksStages = ({ setSchema, setQuestion, setTarget }) => {
+export const TasksStages = ({ schema, target, question, setSchema, setQuestion, setTarget }) => {
   const [expand, setExpand] = React.useState(false);
   const [expand1, setExpand1] = React.useState(false);
   const [expand2, setExpand2] = React.useState(false);
@@ -86,7 +86,7 @@ export const TasksStages = ({ setSchema, setQuestion, setTarget }) => {
           <div className="tasks-stages-container-down-block">
             <div className="tasks-stages-container-down-block-childFirst">
               <span
-                className="tasks-stages-container-down-block-child-text"
+               className={!schema ? "tasks-stages-container-down-block-child-text" : "tasks-stages-container-down-block-child-text-active"}
                 onClick={() => {
                   setTarget(false);
                   setSchema(true);
@@ -101,7 +101,7 @@ export const TasksStages = ({ setSchema, setQuestion, setTarget }) => {
             </div>
             <div className="tasks-stages-container-down-block-child">
               <span
-                className="tasks-stages-container-down-block-child-text"
+                className={!target ? "tasks-stages-container-down-block-child-text" : "tasks-stages-container-down-block-child-text-active"}
                 onClick={() => {
                   setTarget(true);
                   setSchema(false);
@@ -116,7 +116,7 @@ export const TasksStages = ({ setSchema, setQuestion, setTarget }) => {
             </div>
             <div className="tasks-stages-container-down-block-child">
               <span
-                className="tasks-stages-container-down-block-child-text"
+                className={!question ? "tasks-stages-container-down-block-child-text" : "tasks-stages-container-down-block-child-text-active"}
                 onClick={() => {
                   setQuestion(true);
                   setSchema(false);

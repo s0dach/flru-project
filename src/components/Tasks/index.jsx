@@ -19,37 +19,39 @@ export const Tasks = () => {
     <>
       <Header active={"Задания"} />
       <div className="background-filter">
-      <div className="container-tasks">
-      <div className="tasks-container">
-        <TasksStages
-          setSchema={setSchema}
-          setQuestion={setQuestion}
-          setTarget={setTarget}
-        />
-        <div className="tasks-container-left-up-block-rod">
-          <div
-            className="tasks-container-left-up-block"
-            onClick={() => setActive(true)}
-          >
-            {/* <p className="tasks-container-left-up-block-text">Этап 5</p>
+        <div className="container-tasks">
+          <div className="tasks-container">
+            <TasksStages
+              setSchema={setSchema}
+              setQuestion={setQuestion}
+              setTarget={setTarget}
+              schema={schema}
+              question={question}
+              target={target}
+            />
+            <div className="tasks-container-left-up-block-rod">
+              <div className="tasks-container-left-up-block">
+                {/* <p className="tasks-container-left-up-block-text">Этап 5</p>
             <span className="tasks-container-left-up-block-text-down">
               План развития себя
             </span> */}
-            <p className="tasks-container-left-up-block-text">Введение</p>
-            <span className="tasks-container-left-up-block-text-down">
-              Как пользоваться
-            </span>
-          </div>
-          {!schema && !question && !target && <TasksHow />}
-          {schema && <TasksSchema />}
-          {question && <TaskQuestion />}
-          {target && <TasksTarget />}
-          {/* <TasksTip /> */}
-          {/* <TasksStepOne />
+                <div className="mb8">
+                  <p className="tasks-container-left-up-block-text">Введение</p>
+                </div>
+                <span className="tasks-container-left-up-block-text-down">
+                  Как пользоваться
+                </span>
+              </div>
+              {!schema && !question && !target && <TasksHow />}
+              {schema && <TasksSchema />}
+              {question && <TaskQuestion />}
+              {target && <TasksTarget />}
+              {/* <TasksTip /> */}
+              {/* <TasksStepOne />
           <TasksTwoCases /> */}
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
       </div>
       <TasksModal active={active} setActive={setActive} />
     </>

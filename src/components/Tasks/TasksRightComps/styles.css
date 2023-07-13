@@ -268,7 +268,6 @@
 .schema-block-one-container-child-three {
   display: flex;
   align-items: center;
-  
 }
 .schema-block-one-container-child-one-text-one {
   font-style: normal;
@@ -409,7 +408,10 @@
   border: 1px solid #c2c9d1;
   border-radius: 13px;
   padding-left: 24px;
-  color: #C2C9D1;
+  font-size: 18px;
+}
+.task-question-two-block-second-input::placeholder {
+  color: #c2c9d1;
 }
 .task-question-two-block-three-text-block {
   margin-top: 16px;

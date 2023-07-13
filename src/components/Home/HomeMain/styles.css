@@ -19,9 +19,8 @@
   padding: 0 26px;
 }
 .homeMain-menu-block-scroll {
-  max-width: 1600px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: fixed;
   margin: auto;
@@ -43,7 +42,7 @@
 .homeMain-menu-middle-text {
   font-style: normal;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 20px;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
@@ -51,7 +50,7 @@
 .homeMain-menu-middle-text-scroll {
   font-style: normal;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 20px;
   line-height: 24px;
   text-align: center;
   color: #1d1d1d;
@@ -133,4 +132,17 @@
   color: #00a2ff;
   cursor: pointer;
   margin-right: 31px;
+}
+.maxwidth {
+  width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.maxwidth-scroll {
+  width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 26px;
 }

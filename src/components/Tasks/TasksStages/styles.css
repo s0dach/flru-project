@@ -42,13 +42,13 @@
 .tasks-stages-container-down-block-child-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 150%;
   color: #1d1d1d;
 }
 .tasks-stages-container-down-block-child-text-active {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   line-height: 150%;
   color: #1d1d1d;
@@ -84,6 +84,7 @@
   display: flex;
   justify-content: center;
   margin-left: 25px;
+  margin-top: 3px;
 }
 .tasks-stages-container-up-block-svg-text-block-child-text-block-down-text {
   font-style: normal;
@@ -133,9 +134,16 @@
   position: relative;
 }
 .line-item {
-  top: 5px;
+  top: 17px;
   position: absolute;
   background: linear-gradient(#01a2ff, #c2c9d1 60%);
+  width: 3px;
+  bottom: -5px;
+}
+.line-item-end {
+  top: 17px;
+  position: absolute;
+  background: linear-gradient(#01a2ff, #c2c9d1 1000%);
   width: 3px;
   bottom: -5px;
 }
